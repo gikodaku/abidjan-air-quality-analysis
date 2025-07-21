@@ -3,13 +3,13 @@
 Analyser et prédire la qualité de l'air à Abidjan en utilisant le machine learning.
 
 ## 🎯 Résultats Attendus
-- Prédictions PM2.5 avec >85% de précision
+- Prédictions des parametres ave 80% de precision 
 - Dashboard interactif temps réel
 - Recommandations pour autorités publiques
 
 ## 🚀 Quick Start
 \`\`\`bash
-git clone https://github.com/votre-username/abidjan-air-quality-analysis.git
+git clone https://github.com/gikodaku/abidjan-air-quality-analysis.git
 cd abidjan-air-quality-analysis
 pip install -r requirements.txt
 \`\`\`
