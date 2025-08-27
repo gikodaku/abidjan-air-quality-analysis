@@ -3,7 +3,7 @@
 Analyser et prédire la qualité de l'air à Abidjan en utilisant le machine learning.
 
 ## 🎯 Résultats Attendus
-- Prédictions des parametres ave 80% de precision 
+- Prédictions des parametres ave 65% de precision 
 - Dashboard interactif temps réel
 - Recommandations pour autorités publiques
 
