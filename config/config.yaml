@@ -1,0 +1,24 @@
+# AAQA (Abidjan Air Quality Analysis) pipeline configuration
+
+location:
+  name: Abidjan
+  latitude: 5.36
+  longitude: -4.01
+  timezone: Africa/Abidjan
+
+data:
+  # Open-Meteo CAMS data for Abidjan starts in August 2022
+  start_date: "2022-08-01"
+  # null = up to yesterday
+  end_date: null
+  # Longest gap (in hours) that is interpolated
+  max_gap_hours: 6
+
+model:
+  # Forecast pollutants (see src/aaqa/pollutants.py); the first is the main pollutant
+  pollutants: [pm2_5, pm10, ozone, nitrogen_dioxide, sulphur_dioxide, carbon_monoxide]
+  horizons: [1, 2, 3]
+  # Final days held out for evaluation (a full year covers every season)
+  test_days: 365
+  cv_splits: 5
+  random_state: 42

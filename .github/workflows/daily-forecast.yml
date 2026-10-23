@@ -1,0 +1,31 @@
+name: Daily forecast
+
+# Every day at 06:00 (Abidjan time = UTC): new data, retraining, forecast.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -e .
+      - run: python -m aaqa all
+        env:
+          AIRNOW_API_KEY: ${{ secrets.AIRNOW_API_KEY }}   # optional: calibration
+      - uses: actions/upload-artifact@v4
+        with:
+          name: forecast-${{ github.run_id }}
+          path: |
+            reports/latest_forecast.json
+            reports/metrics.json
+            reports/calibration.json
+            reports/figures/
+            models/forecaster.joblib
+          retention-days: 14

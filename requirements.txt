@@ -1,28 +1,19 @@
-# Data Science Essentials
-pandas>=1.5.0
-numpy>=1.21.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-plotly>=5.0.0
-
-# Machine Learning
-scikit-learn>=1.1.0
-xgboost>=1.6.0
-lightgbm>=3.3.0
-
-# Data Collection
-requests>=2.28.0
-beautifulsoup4>=4.11.0
-
-# Jupyter & Development
-jupyter>=1.0.0
-ipykernel>=6.15.0
-
-# Deployment
-flask>=2.2.0
-fastapi>=0.85.0
-uvicorn>=0.18.0
-
-# Utilities
-pyyaml>=6.0
-python-dotenv>=0.20.0
+# Tested versions (Python 3.13, October 2026). Recommended install:
+#   pip install -e ".[dev]"
+# This file is for deployments that only read requirements.txt
+# (Streamlit Community Cloud, Hugging Face Spaces).
+-e .
+pandas==3.1.0
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+requests==2.34.2
+PyYAML==6.0.3
+matplotlib==3.11.2
+fastapi==0.159.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+streamlit==1.66.1
+plotly==7.1.0
+anthropic==2.1.0
+python-dotenv==1.2.4

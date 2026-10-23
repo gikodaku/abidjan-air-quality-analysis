@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    volumes: [aaqa-data:/app/data, aaqa-models:/app/models, aaqa-reports:/app/reports]
+
+  app:
+    build: .
+    command: ["streamlit", "run", "dashboard/app.py", "--server.address=0.0.0.0",
+              "--server.port=8501"]
+    ports: ["8501:8501"]
+    volumes: [aaqa-data:/app/data, aaqa-models:/app/models, aaqa-reports:/app/reports]
+    depends_on: [api]
+
+  monitor:
+    build: .
+    command: ["streamlit", "run", "dashboard/monitoring.py", "--server.address=0.0.0.0",
+              "--server.port=8502"]
+    ports: ["8502:8502"]
+    volumes: [aaqa-data:/app/data, aaqa-models:/app/models, aaqa-reports:/app/reports]
+    depends_on: [api]
+
+volumes:
+  aaqa-data:
+  aaqa-models:
+  aaqa-reports:

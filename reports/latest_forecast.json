@@ -1,0 +1,508 @@
+{
+  "issued_for": "2026-10-22",
+  "observed": {
+    "date": "2026-10-22",
+    "overall": {
+      "aqi": 31,
+      "category": "good",
+      "label": "Good",
+      "color": "#00a84f",
+      "advice": "Air quality is satisfactory. No restrictions on outdoor activities.",
+      "dominant_pollutant": "pm2_5",
+      "dominant_name": "PM2.5"
+    },
+    "pollutants": [
+      {
+        "pollutant": "pm2_5",
+        "name": "PM2.5",
+        "statistic": "24-h mean",
+        "value": 5.7,
+        "unit": "µg/m³",
+        "aqi": 31,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": false
+      },
+      {
+        "pollutant": "pm10",
+        "name": "PM10",
+        "statistic": "24-h mean",
+        "value": 9.0,
+        "unit": "µg/m³",
+        "aqi": 8,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": false
+      },
+      {
+        "pollutant": "ozone",
+        "name": "O3",
+        "statistic": "max 8-h mean",
+        "value": 61.6,
+        "unit": "µg/m³",
+        "aqi": 29,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": false
+      },
+      {
+        "pollutant": "nitrogen_dioxide",
+        "name": "NO2",
+        "statistic": "max hourly",
+        "value": 4.7,
+        "unit": "µg/m³",
+        "aqi": 2,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": null
+      },
+      {
+        "pollutant": "sulphur_dioxide",
+        "name": "SO2",
+        "statistic": "max hourly",
+        "value": 1.5,
+        "unit": "µg/m³",
+        "aqi": 0,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": null
+      },
+      {
+        "pollutant": "carbon_monoxide",
+        "name": "CO",
+        "statistic": "max 8-h mean",
+        "value": 226.2,
+        "unit": "µg/m³",
+        "aqi": 1,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "exceeds_who": false
+      }
+    ]
+  },
+  "forecasts": [
+    {
+      "date": "2026-10-23",
+      "horizon_days": 1,
+      "overall": {
+        "aqi": 33,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "advice": "Air quality is satisfactory. No restrictions on outdoor activities.",
+        "dominant_pollutant": "pm2_5",
+        "dominant_name": "PM2.5"
+      },
+      "pollutants": [
+        {
+          "pollutant": "pm2_5",
+          "name": "PM2.5",
+          "statistic": "24-h mean",
+          "value": 5.9,
+          "unit": "µg/m³",
+          "aqi": 33,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            4.5,
+            7.4
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "pm10",
+          "name": "PM10",
+          "statistic": "24-h mean",
+          "value": 10.2,
+          "unit": "µg/m³",
+          "aqi": 9,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            7.3,
+            12.6
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "ozone",
+          "name": "O3",
+          "statistic": "max 8-h mean",
+          "value": 58.1,
+          "unit": "µg/m³",
+          "aqi": 27,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            52.9,
+            67.8
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "nitrogen_dioxide",
+          "name": "NO2",
+          "statistic": "max hourly",
+          "value": 3.5,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            2.1,
+            5.9
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "sulphur_dioxide",
+          "name": "SO2",
+          "statistic": "max hourly",
+          "value": 1.5,
+          "unit": "µg/m³",
+          "aqi": 0,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            0.9,
+            1.8
+          ],
+          "method": "persistence"
+        },
+        {
+          "pollutant": "carbon_monoxide",
+          "name": "CO",
+          "statistic": "max 8-h mean",
+          "value": 226.8,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            191.3,
+            254.8
+          ],
+          "method": "gradient_boosting"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "horizon_days": 2,
+      "overall": {
+        "aqi": 36,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "advice": "Air quality is satisfactory. No restrictions on outdoor activities.",
+        "dominant_pollutant": "pm2_5",
+        "dominant_name": "PM2.5"
+      },
+      "pollutants": [
+        {
+          "pollutant": "pm2_5",
+          "name": "PM2.5",
+          "statistic": "24-h mean",
+          "value": 6.5,
+          "unit": "µg/m³",
+          "aqi": 36,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            4.7,
+            8.1
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "pm10",
+          "name": "PM10",
+          "statistic": "24-h mean",
+          "value": 11.1,
+          "unit": "µg/m³",
+          "aqi": 10,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            7.2,
+            13.1
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "ozone",
+          "name": "O3",
+          "statistic": "max 8-h mean",
+          "value": 58.3,
+          "unit": "µg/m³",
+          "aqi": 27,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            50.5,
+            66.6
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "nitrogen_dioxide",
+          "name": "NO2",
+          "statistic": "max hourly",
+          "value": 3.3,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            2.1,
+            6.4
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "sulphur_dioxide",
+          "name": "SO2",
+          "statistic": "max hourly",
+          "value": 1.5,
+          "unit": "µg/m³",
+          "aqi": 0,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            0.8,
+            1.8
+          ],
+          "method": "persistence"
+        },
+        {
+          "pollutant": "carbon_monoxide",
+          "name": "CO",
+          "statistic": "max 8-h mean",
+          "value": 211.9,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            174.5,
+            254.2
+          ],
+          "method": "gradient_boosting"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "horizon_days": 3,
+      "overall": {
+        "aqi": 35,
+        "category": "good",
+        "label": "Good",
+        "color": "#00a84f",
+        "advice": "Air quality is satisfactory. No restrictions on outdoor activities.",
+        "dominant_pollutant": "pm2_5",
+        "dominant_name": "PM2.5"
+      },
+      "pollutants": [
+        {
+          "pollutant": "pm2_5",
+          "name": "PM2.5",
+          "statistic": "24-h mean",
+          "value": 6.3,
+          "unit": "µg/m³",
+          "aqi": 35,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            4.5,
+            8.1
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "pm10",
+          "name": "PM10",
+          "statistic": "24-h mean",
+          "value": 10.2,
+          "unit": "µg/m³",
+          "aqi": 9,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            6.8,
+            16.0
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "ozone",
+          "name": "O3",
+          "statistic": "max 8-h mean",
+          "value": 55.6,
+          "unit": "µg/m³",
+          "aqi": 26,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            51.4,
+            66.8
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "nitrogen_dioxide",
+          "name": "NO2",
+          "statistic": "max hourly",
+          "value": 2.7,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            2.0,
+            5.9
+          ],
+          "method": "gradient_boosting"
+        },
+        {
+          "pollutant": "sulphur_dioxide",
+          "name": "SO2",
+          "statistic": "max hourly",
+          "value": 1.5,
+          "unit": "µg/m³",
+          "aqi": 0,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": null,
+          "interval_80": [
+            0.9,
+            1.7
+          ],
+          "method": "persistence"
+        },
+        {
+          "pollutant": "carbon_monoxide",
+          "name": "CO",
+          "statistic": "max 8-h mean",
+          "value": 219.2,
+          "unit": "µg/m³",
+          "aqi": 1,
+          "category": "good",
+          "label": "Good",
+          "color": "#00a84f",
+          "exceeds_who": false,
+          "interval_80": [
+            180.9,
+            277.8
+          ],
+          "method": "gradient_boosting"
+        }
+      ]
+    }
+  ],
+  "weather": [
+    {
+      "date": "2026-10-23",
+      "description": "Light drizzle",
+      "icon": "🌦️",
+      "sky": "rain",
+      "temperature_min": 25.6,
+      "temperature_max": 31.0,
+      "feels_like_max": 36.8,
+      "precipitation_mm": 1.8,
+      "precipitation_probability": 99,
+      "humidity": 78,
+      "wind_max_kmh": 11.6,
+      "wind_from": "S",
+      "uv_index": 8.05,
+      "uv_level": "very high"
+    },
+    {
+      "date": "2026-10-24",
+      "description": "Drizzle",
+      "icon": "🌦️",
+      "sky": "rain",
+      "temperature_min": 25.2,
+      "temperature_max": 30.9,
+      "feels_like_max": 36.6,
+      "precipitation_mm": 2.5,
+      "precipitation_probability": 96,
+      "humidity": 81,
+      "wind_max_kmh": 8.1,
+      "wind_from": "SW",
+      "uv_index": 7.2,
+      "uv_level": "high"
+    },
+    {
+      "date": "2026-10-25",
+      "description": "Showers",
+      "icon": "🌦️",
+      "sky": "rain",
+      "temperature_min": 24.5,
+      "temperature_max": 30.8,
+      "feels_like_max": 37.4,
+      "precipitation_mm": 4.8,
+      "precipitation_probability": 94,
+      "humidity": 84,
+      "wind_max_kmh": 10.7,
+      "wind_from": "SW",
+      "uv_index": 7.75,
+      "uv_level": "high"
+    },
+    {
+      "date": "2026-10-26",
+      "description": "Showers",
+      "icon": "🌦️",
+      "sky": "rain",
+      "temperature_min": 25.0,
+      "temperature_max": 30.3,
+      "feels_like_max": 36.3,
+      "precipitation_mm": 4.9,
+      "precipitation_probability": 97,
+      "humidity": 82,
+      "wind_max_kmh": 11.2,
+      "wind_from": "SW",
+      "uv_index": 8.25,
+      "uv_level": "very high"
+    }
+  ]
+}

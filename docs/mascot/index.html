@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kos the leopard</title>
+<style>
+  body { margin: 0; padding: 24px; background: #f3f6f6; color: #13262b;
+         font-family: Montserrat, system-ui, sans-serif; }
+  h1 { margin: 0 0 4px; } .lead { color: #3f5358; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+           gap: 18px; }
+  article { background: #fff; border-radius: 18px; padding: 18px; text-align: center;
+             box-shadow: 0 4px 18px rgba(16,40,44,0.07); }
+  h2 { font-size: 1.15rem; margin: 10px 0 2px; display: flex; gap: 8px;
+        justify-content: center; align-items: center; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .range { color: #5f7377; margin: 0 0 8px; font-weight: 600; }
+  p { margin: 6px 0; line-height: 1.45; } .advice { color: #3f5358; font-size: 0.9rem; }
+  .file { font-size: 0.8rem; } .icons { display: flex; gap: 18px; margin: 24px 0 8px; }
+</style></head><body>
+<h1>Kos the leopard</h1>
+<p class="lead">The AAQA mascot at each AQI level. Its fur, health, scene and animation follow
+the air quality and the health advice. Animations stop when the system's "reduce motion" setting
+is on.</p>
+<div class="grid">
+        <article>
+          <svg class="kos kos-good" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, good air: enjoying the outdoors">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-good .kos-body { animation: kos-hop 1.3s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-good"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-good" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-good" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-good)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-good)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#bfe8ff"/><g class="kos-sun kos-fill"><circle cx="128" cy="34" r="13" fill="#ffd34d"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(0 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(45 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(90 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(135 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(180 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(225 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(270 128 34)"/><rect x="126.5" y="12" width="3" height="7" rx="1.5" fill="#ffd34d" transform="rotate(315 128 34)"/></g><path d="M0 150 Q40 128 80 140 T160 136 V170 H0z" fill="#7cc35a"/><path d="M0 158 Q50 144 100 154 T160 150 V170 H0z" fill="#5aa845"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#f4b23e" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#7a4a12" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#7a4a12"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#f4b23e"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#f4b23e"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#f4b23e"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#f4b23e"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#f4b23e" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#7a4a12" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#7a4a12" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#7a4a12" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#7a4a12" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#7a4a12"/><circle cx="80" cy="50" r="2.1" fill="#7a4a12"/><circle cx="90" cy="54" r="2.1" fill="#7a4a12"/><circle cx="64" cy="64" r="2.1" fill="#7a4a12"/><circle cx="96" cy="64" r="2.1" fill="#7a4a12"/><circle cx="75" cy="62" r="2.1" fill="#7a4a12"/><circle cx="85" cy="62" r="2.1" fill="#7a4a12"/><circle cx="80" cy="70" r="2.1" fill="#7a4a12"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fff4dc"/><path d="M54 86 q8 -9 16 0 M90 86 q8 -9 16 0" stroke="#2b1d14" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M66 110 Q80 128 94 110 Z" fill="#7a2a1e" stroke="#2b1d14" stroke-width="2.5" stroke-linejoin="round"/><path d="M73 118 Q80 126 87 118 Q80 121 73 118z" fill="#ff8a8a"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-sparkle kos-fill"><path d="M26 40 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3z" fill="#fff"/></g><g class="kos-sparkle kos-fill kos-late"><path d="M138 70 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2z" fill="#fff"/></g><circle cx="50" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/><circle cx="110" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#00a84f"></span>Good</h2>
+          <p class="range">AQI 0–50</p>
+          <p>Outdoors in the sun, jumping for joy: enjoy the fresh air.</p>
+          <p class="advice">Advice: Air quality is satisfactory. No restrictions on outdoor activities.</p>
+          <p class="file"><a href="kos-good.svg">kos-good.svg</a></p>
+        </article>
+        <article>
+          <svg class="kos kos-moderate" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, moderate air: calm outside">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-moderate .kos-body { animation: kos-bob 4s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-moderate"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-moderate" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-moderate" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-moderate)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-moderate)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#e4ecd2"/><circle cx="128" cy="34" r="12" fill="#f6e7a8"/><ellipse cx="118" cy="38" rx="16" ry="7" fill="#fff" opacity="0.9"/><path d="M0 150 Q40 128 80 140 T160 136 V170 H0z" fill="#7cc35a"/><path d="M0 158 Q50 144 100 154 T160 150 V170 H0z" fill="#5aa845"/><g class="kos-smog"><rect x="-10" y="60" width="180" height="40" rx="20" fill="#fff" opacity="0.35"/></g>
+        <circle class="kos-dust" cx="11.8" cy="74.9" r="3.4" fill="#c9b46a" style="--dx:-11px;--dy:-24px;--o:0.76;animation-duration:9.4s;animation-delay:-4.4s"/><circle class="kos-dust" cx="142.7" cy="123.1" r="3.7" fill="#c9b46a" style="--dx:14px;--dy:-29px;--o:0.80;animation-duration:10.5s;animation-delay:-7.7s"/><circle class="kos-dust" cx="21.2" cy="112.7" r="3.9" fill="#c9b46a" style="--dx:6px;--dy:-23px;--o:0.84;animation-duration:9.0s;animation-delay:-7.0s"/><circle class="kos-dust" cx="89.1" cy="13.9" r="2.7" fill="#c9b46a" style="--dx:-9px;--dy:-20px;--o:0.63;animation-duration:8.5s;animation-delay:-0.1s"/><circle class="kos-dust" cx="143.9" cy="129.9" r="3.9" fill="#c9b46a" style="--dx:9px;--dy:-19px;--o:0.84;animation-duration:8.3s;animation-delay:-8.2s"/>
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#e9c06e" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#86602a" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#86602a"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#e9c06e"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#e9c06e"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#e9c06e"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#e9c06e"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#e9c06e" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#86602a" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#86602a" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#86602a" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#86602a" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#86602a"/><circle cx="80" cy="50" r="2.1" fill="#86602a"/><circle cx="90" cy="54" r="2.1" fill="#86602a"/><circle cx="64" cy="64" r="2.1" fill="#86602a"/><circle cx="96" cy="64" r="2.1" fill="#86602a"/><circle cx="75" cy="62" r="2.1" fill="#86602a"/><circle cx="85" cy="62" r="2.1" fill="#86602a"/><circle cx="80" cy="70" r="2.1" fill="#86602a"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fff6e2"/><g class="kos-eyes kos-fill"><ellipse cx="62" cy="86" rx="9" ry="8" fill="#b6c84a"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#b6c84a"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/></g><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M70 112 Q75 117 80 112 Q85 117 90 112" stroke="#2b1d14" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><circle cx="50" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/><circle cx="110" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#e6c700"></span>Moderate</h2>
+          <p class="range">AQI 51–100</p>
+          <p>Outdoors, calm, a light haze: fine for almost everyone.</p>
+          <p class="advice">Advice: Acceptable. Unusually sensitive people should limit prolonged outdoor exertion.</p>
+          <p class="file"><a href="kos-moderate.svg">kos-moderate.svg</a></p>
+        </article>
+        <article>
+          <svg class="kos kos-usg" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, unhealthy for sensitive groups: worried, runny nose">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-usg .kos-body { animation: kos-fidget 1.4s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-usg"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-usg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-usg" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-usg)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-usg)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#f3dfc6"/><circle cx="128" cy="34" r="12" fill="#f6e7a8"/><ellipse cx="118" cy="38" rx="16" ry="7" fill="#fff" opacity="0.9"/><path d="M0 150 Q40 128 80 140 T160 136 V170 H0z" fill="#7cc35a"/><path d="M0 158 Q50 144 100 154 T160 150 V170 H0z" fill="#5aa845"/><g class="kos-smog"><rect x="-10" y="60" width="180" height="40" rx="20" fill="#fff" opacity="0.35"/></g>
+        <circle class="kos-dust" cx="87.9" cy="13.8" r="3.4" fill="#c98a3c" style="--dx:0px;--dy:-18px;--o:0.74;animation-duration:6.3s;animation-delay:-0.1s"/><circle class="kos-dust" cx="21.7" cy="32.2" r="2.3" fill="#c98a3c" style="--dx:-12px;--dy:-32px;--o:0.57;animation-duration:8.6s;animation-delay:-1.1s"/><circle class="kos-dust" cx="13.4" cy="87.7" r="2.4" fill="#c98a3c" style="--dx:-7px;--dy:-16px;--o:0.59;animation-duration:5.8s;animation-delay:-4.1s"/><circle class="kos-dust" cx="22.7" cy="138.4" r="3.9" fill="#c98a3c" style="--dx:12px;--dy:-29px;--o:0.84;animation-duration:8.1s;animation-delay:-6.8s"/><circle class="kos-dust" cx="136.7" cy="60.4" r="3.3" fill="#c98a3c" style="--dx:11px;--dy:-27px;--o:0.74;animation-duration:7.8s;animation-delay:-2.6s"/><circle class="kos-dust" cx="15.5" cy="91.7" r="1.8" fill="#c98a3c" style="--dx:-2px;--dy:-16px;--o:0.49;animation-duration:5.9s;animation-delay:-4.3s"/><circle class="kos-dust" cx="151.6" cy="134.7" r="3.9" fill="#c98a3c" style="--dx:11px;--dy:-15px;--o:0.84;animation-duration:5.7s;animation-delay:-6.6s"/><circle class="kos-dust" cx="19.0" cy="34.5" r="3.8" fill="#c98a3c" style="--dx:-2px;--dy:-17px;--o:0.81;animation-duration:6.1s;animation-delay:-1.2s"/><circle class="kos-dust" cx="142.6" cy="108.8" r="2.5" fill="#c98a3c" style="--dx:4px;--dy:-17px;--o:0.61;animation-duration:6.1s;animation-delay:-5.2s"/>
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#d8a370" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#8b5e36" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#8b5e36"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#d8a370"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#d8a370"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#d8a370"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#d8a370"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#d8a370" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#8b5e36" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#8b5e36" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#8b5e36" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#8b5e36" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#8b5e36"/><circle cx="80" cy="50" r="2.1" fill="#8b5e36"/><circle cx="90" cy="54" r="2.1" fill="#8b5e36"/><circle cx="64" cy="64" r="2.1" fill="#8b5e36"/><circle cx="96" cy="64" r="2.1" fill="#8b5e36"/><circle cx="75" cy="62" r="2.1" fill="#8b5e36"/><circle cx="85" cy="62" r="2.1" fill="#8b5e36"/><circle cx="80" cy="70" r="2.1" fill="#8b5e36"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fbecd8"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#c9b04a"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#c9b04a"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><g class="kos-drip kos-fill"><path d="M84 106 q3 6 0 9 q-3 -3 0 -9z" fill="#9fd8f5"/></g><path d="M70 116 Q75 112 80 115 Q85 118 90 114" stroke="#2b1d14" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-drop kos-fill"><path d="M118 62 q6 9 0 13 q-6 -4 0 -13z" fill="#7fd3f0"/></g></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#ff7e00"></span>Unhealthy for sensitive groups</h2>
+          <p class="range">AQI 101–150</p>
+          <p>Worried, runny nose, sweating: sensitive people should take it easy.</p>
+          <p class="advice">Advice: Children, older adults, people with asthma and pregnant women: reduce intense outdoor exertion.</p>
+          <p class="file"><a href="kos-usg.svg">kos-usg.svg</a></p>
+        </article>
+        <article>
+          <svg class="kos kos-unhealthy" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, unhealthy air: sick, wearing a mask">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-unhealthy .kos-body { animation: kos-cough 2.6s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-unhealthy"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-unhealthy" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-unhealthy" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-unhealthy)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-unhealthy)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#e6d7d3"/><circle cx="128" cy="34" r="12" fill="#f6e7a8"/><ellipse cx="118" cy="38" rx="16" ry="7" fill="#fff" opacity="0.9"/><path d="M0 150 Q40 128 80 140 T160 136 V170 H0z" fill="#7cc35a"/><path d="M0 158 Q50 144 100 154 T160 150 V170 H0z" fill="#5aa845"/><g class="kos-smog"><rect x="-10" y="60" width="180" height="40" rx="20" fill="#fff" opacity="0.35"/></g>
+        <circle class="kos-dust" cx="129.9" cy="82.8" r="3.3" fill="#8a8f94" style="--dx:12px;--dy:-13px;--o:0.73;animation-duration:4.6s;animation-delay:-3.3s"/><circle class="kos-dust" cx="143.4" cy="71.3" r="3.4" fill="#8a8f94" style="--dx:-8px;--dy:-35px;--o:0.75;animation-duration:7.8s;animation-delay:-2.7s"/><circle class="kos-dust" cx="144.8" cy="62.8" r="3.4" fill="#8a8f94" style="--dx:11px;--dy:-34px;--o:0.74;animation-duration:7.6s;animation-delay:-2.3s"/><circle class="kos-dust" cx="146.1" cy="132.9" r="2.8" fill="#8a8f94" style="--dx:3px;--dy:-13px;--o:0.64;animation-duration:4.7s;animation-delay:-5.6s"/><circle class="kos-dust" cx="135.6" cy="121.0" r="2.7" fill="#8a8f94" style="--dx:13px;--dy:-35px;--o:0.63;animation-duration:7.8s;animation-delay:-5.0s"/><circle class="kos-dust" cx="44.5" cy="13.8" r="3.5" fill="#8a8f94" style="--dx:-5px;--dy:-25px;--o:0.76;animation-duration:6.4s;animation-delay:-0.1s"/><circle class="kos-dust" cx="139.8" cy="92.4" r="2.6" fill="#8a8f94" style="--dx:2px;--dy:-17px;--o:0.62;animation-duration:5.2s;animation-delay:-3.7s"/><circle class="kos-dust" cx="16.4" cy="90.7" r="2.6" fill="#8a8f94" style="--dx:-6px;--dy:-20px;--o:0.61;animation-duration:5.6s;animation-delay:-3.6s"/><circle class="kos-dust" cx="21.6" cy="81.9" r="4.0" fill="#8a8f94" style="--dx:-1px;--dy:-10px;--o:0.84;animation-duration:4.2s;animation-delay:-3.2s"/><circle class="kos-dust" cx="56.8" cy="25.7" r="3.7" fill="#8a8f94" style="--dx:7px;--dy:-14px;--o:0.80;animation-duration:4.8s;animation-delay:-0.6s"/><circle class="kos-dust" cx="126.2" cy="36.8" r="2.9" fill="#8a8f94" style="--dx:10px;--dy:-20px;--o:0.67;animation-duration:5.6s;animation-delay:-1.1s"/><circle class="kos-dust" cx="86.4" cy="20.9" r="3.1" fill="#8a8f94" style="--dx:-9px;--dy:-34px;--o:0.70;animation-duration:7.7s;animation-delay:-0.4s"/><circle class="kos-dust" cx="141.4" cy="41.1" r="3.7" fill="#8a8f94" style="--dx:-1px;--dy:-21px;--o:0.81;animation-duration:5.8s;animation-delay:-1.3s"/><circle class="kos-dust" cx="126.3" cy="136.5" r="3.0" fill="#8a8f94" style="--dx:-4px;--dy:-35px;--o:0.69;animation-duration:7.7s;animation-delay:-5.7s"/>
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#bfa58c" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#6f5a46" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#6f5a46"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#bfa58c"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#bfa58c"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#bfa58c"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#bfa58c"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#bfa58c" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#6f5a46" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#6f5a46" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#6f5a46" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#6f5a46" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#6f5a46"/><circle cx="80" cy="50" r="2.1" fill="#6f5a46"/><circle cx="90" cy="54" r="2.1" fill="#6f5a46"/><circle cx="64" cy="64" r="2.1" fill="#6f5a46"/><circle cx="96" cy="64" r="2.1" fill="#6f5a46"/><circle cx="75" cy="62" r="2.1" fill="#6f5a46"/><circle cx="85" cy="62" r="2.1" fill="#6f5a46"/><circle cx="80" cy="70" r="2.1" fill="#6f5a46"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#f2e7da"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#b5a24c"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#b5a24c"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 82.5 Q62 76.25 72 82.5 V78 H52z M88 82.5 Q98 76.25 108 82.5 V78 H88z" fill="#bfa58c"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-drop kos-fill"><path d="M118 62 q6 9 0 13 q-6 -4 0 -13z" fill="#7fd3f0"/></g><circle cx="46" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><circle cx="114" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><path d="M44 62 Q40 92 54 104 M116 62 Q120 92 106 104" stroke="#e9eef0" stroke-width="2.4" fill="none"/><path d="M52 100 Q80 90 108 100 L102 122 Q80 132 58 122 Z" fill="#fff" stroke="#cfd8dc" stroke-width="1.6"/><path d="M80 94 V128 M60 108 Q80 104 100 108" stroke="#d6dee2" stroke-width="1.6" fill="none"/><g fill="#dfe4e6"><circle class="kos-puff kos-fill" cx="44" cy="118" r="6"/><circle class="kos-puff kos-fill" style="animation-delay:-0.4s" cx="36" cy="110" r="4.5"/></g></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#e8003f"></span>Unhealthy</h2>
+          <p class="range">AQI 151–200</p>
+          <p>Sick and coughing behind an FFP2 mask: wear one if you stay out long.</p>
+          <p class="advice">Advice: Everyone may feel effects. Avoid outdoor sport; wear an FFP2 mask during prolonged exposure.</p>
+          <p class="file"><a href="kos-unhealthy.svg">kos-unhealthy.svg</a></p>
+        </article>
+        <article>
+          <svg class="kos kos-very_unhealthy" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, very unhealthy air: staying at home with a mask">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-very_unhealthy .kos-body { animation: kos-shiver 0.25s linear infinite; }</style>
+      <defs><clipPath id="kos-frame-very_unhealthy"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-very_unhealthy" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-very_unhealthy" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-very_unhealthy)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-very_unhealthy)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#f4ece2"/><rect x="14" y="14" width="132" height="112" rx="6" fill="#d9cfe0"/><g class="kos-smog"><ellipse cx="50" cy="50" rx="40" ry="14" fill="#9c8fa6" opacity="0.55"/><ellipse cx="112" cy="70" rx="36" ry="12" fill="#9c8fa6" opacity="0.45"/></g><path d="M80 14 V126 M14 70 H146" stroke="#8b6b4a" stroke-width="5"/><rect x="14" y="14" width="132" height="112" rx="6" fill="none" stroke="#8b6b4a" stroke-width="7"/><path d="M14 14 Q30 70 18 126 H8 V14z M146 14 Q130 70 142 126 H152 V14z" fill="#d9776f"/><rect x="0" y="126" width="160" height="44" fill="#c9a27a"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#b3a3b8" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#6c5a73" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#6c5a73"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#b3a3b8"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#b3a3b8"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#b3a3b8"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#b3a3b8"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#b3a3b8" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#6c5a73" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#6c5a73" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#6c5a73" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#6c5a73" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#6c5a73"/><circle cx="80" cy="50" r="2.1" fill="#6c5a73"/><circle cx="90" cy="54" r="2.1" fill="#6c5a73"/><circle cx="64" cy="64" r="2.1" fill="#6c5a73"/><circle cx="96" cy="64" r="2.1" fill="#6c5a73"/><circle cx="75" cy="62" r="2.1" fill="#6c5a73"/><circle cx="85" cy="62" r="2.1" fill="#6c5a73"/><circle cx="80" cy="70" r="2.1" fill="#6c5a73"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#efe7f0"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#a99bb0"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#a99bb0"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 81.5 Q62 75.75 72 81.5 V78 H52z M88 81.5 Q98 75.75 108 81.5 V78 H88z" fill="#b3a3b8"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><circle cx="46" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><circle cx="114" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><path d="M44 62 Q40 92 54 104 M116 62 Q120 92 106 104" stroke="#e9eef0" stroke-width="2.4" fill="none"/><path d="M52 100 Q80 90 108 100 L102 122 Q80 132 58 122 Z" fill="#fff" stroke="#cfd8dc" stroke-width="1.6"/><path d="M80 94 V128 M60 108 Q80 104 100 108" stroke="#d6dee2" stroke-width="1.6" fill="none"/><path d="M20 150 Q40 128 80 134 Q120 128 140 150 V170 H20z" fill="#6fa8dc"/><path d="M30 152 h100 M40 162 h80" stroke="#9ec6ea" stroke-width="3"/><g class="kos-thermo kos-fill"><rect x="100" y="112" width="26" height="5" rx="2.5" fill="#fff" stroke="#9aa5ab" stroke-width="1" transform="rotate(-20 100 114)"/><circle cx="125" cy="105" r="3.5" fill="#e53935"/></g></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#8f3f97"></span>Very unhealthy</h2>
+          <p class="range">AQI 201–300</p>
+          <p>At home behind the window, mask, blanket and thermometer: stay indoors.</p>
+          <p class="advice">Advice: Health alert: stay indoors with windows closed. Sensitive groups: no outdoor activity.</p>
+          <p class="file"><a href="kos-very_unhealthy.svg">kos-very_unhealthy.svg</a></p>
+        </article>
+        <article>
+          <svg class="kos kos-hazardous" width="220"
+      height="234"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, hazardous air: zombie">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-hazardous .kos-body { animation: kos-lurch 3.2s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-hazardous"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-hazardous" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-hazardous" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-hazardous)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-hazardous)">
+        <rect x="0" y="0" width="160" height="170" rx="26" fill="#3b3640"/><circle cx="124" cy="32" r="14" fill="#c9d8a8" opacity="0.8"/><g class="kos-smog"><ellipse cx="40" cy="60" rx="50" ry="16" fill="#5b6b4f" opacity="0.45"/><ellipse cx="120" cy="90" rx="50" ry="16" fill="#5b6b4f" opacity="0.35"/></g><path d="M0 150 Q40 140 80 146 T160 142 V170 H0z" fill="#2a2630"/><path d="M18 150 v-14 h8 v14 M22 140 h-6 M22 140 h6" stroke="#4a4552" stroke-width="3"/>
+        <circle class="kos-dust" cx="141.5" cy="90.7" r="3.9" fill="#5b6b4f" style="--dx:5px;--dy:-26px;--o:0.70;animation-duration:4.3s;animation-delay:-2.4s"/><circle class="kos-dust" cx="64.7" cy="19.6" r="3.9" fill="#5b6b4f" style="--dx:-1px;--dy:-16px;--o:0.70;animation-duration:3.3s;animation-delay:-0.2s"/><circle class="kos-dust" cx="18.8" cy="12.9" r="3.6" fill="#5b6b4f" style="--dx:-14px;--dy:-20px;--o:0.65;animation-duration:3.7s;animation-delay:-0.0s"/><circle class="kos-dust" cx="147.8" cy="121.8" r="3.7" fill="#5b6b4f" style="--dx:15px;--dy:-32px;--o:0.66;animation-duration:4.9s;animation-delay:-3.4s"/><circle class="kos-dust" cx="11.1" cy="112.1" r="4.6" fill="#5b6b4f" style="--dx:-14px;--dy:-25px;--o:0.82;animation-duration:4.3s;animation-delay:-3.1s"/><circle class="kos-dust" cx="136.5" cy="117.9" r="2.8" fill="#5b6b4f" style="--dx:-10px;--dy:-19px;--o:0.52;animation-duration:3.6s;animation-delay:-3.3s"/><circle class="kos-dust" cx="18.6" cy="138.0" r="3.2" fill="#5b6b4f" style="--dx:14px;--dy:-21px;--o:0.59;animation-duration:3.9s;animation-delay:-3.9s"/><circle class="kos-dust" cx="11.8" cy="73.0" r="3.3" fill="#5b6b4f" style="--dx:-14px;--dy:-25px;--o:0.61;animation-duration:4.2s;animation-delay:-1.9s"/><circle class="kos-dust" cx="30.7" cy="28.0" r="2.8" fill="#5b6b4f" style="--dx:-9px;--dy:-22px;--o:0.51;animation-duration:3.9s;animation-delay:-0.5s"/><circle class="kos-dust" cx="81.1" cy="27.2" r="2.5" fill="#5b6b4f" style="--dx:2px;--dy:-10px;--o:0.47;animation-duration:2.8s;animation-delay:-0.5s"/><circle class="kos-dust" cx="142.7" cy="75.0" r="3.9" fill="#5b6b4f" style="--dx:5px;--dy:-13px;--o:0.70;animation-duration:3.1s;animation-delay:-1.9s"/><circle class="kos-dust" cx="22.2" cy="74.1" r="2.6" fill="#5b6b4f" style="--dx:-2px;--dy:-22px;--o:0.48;animation-duration:4.0s;animation-delay:-1.9s"/><circle class="kos-dust" cx="13.5" cy="53.7" r="4.2" fill="#5b6b4f" style="--dx:-15px;--dy:-19px;--o:0.75;animation-duration:3.7s;animation-delay:-1.3s"/><circle class="kos-dust" cx="135.9" cy="31.0" r="4.5" fill="#5b6b4f" style="--dx:9px;--dy:-24px;--o:0.81;animation-duration:4.1s;animation-delay:-0.6s"/><circle class="kos-dust" cx="143.4" cy="133.6" r="3.1" fill="#5b6b4f" style="--dx:13px;--dy:-30px;--o:0.57;animation-duration:4.7s;animation-delay:-3.7s"/><circle class="kos-dust" cx="26.9" cy="34.6" r="2.9" fill="#5b6b4f" style="--dx:-12px;--dy:-32px;--o:0.53;animation-duration:4.9s;animation-delay:-0.7s"/><circle class="kos-dust" cx="17.2" cy="46.9" r="4.5" fill="#5b6b4f" style="--dx:-5px;--dy:-22px;--o:0.80;animation-duration:3.9s;animation-delay:-1.1s"/><circle class="kos-dust" cx="30.0" cy="86.6" r="3.5" fill="#5b6b4f" style="--dx:13px;--dy:-12px;--o:0.63;animation-duration:3.0s;animation-delay:-2.3s"/><circle class="kos-dust" cx="140.1" cy="77.3" r="4.6" fill="#5b6b4f" style="--dx:7px;--dy:-23px;--o:0.82;animation-duration:4.1s;animation-delay:-2.0s"/><circle class="kos-dust" cx="143.8" cy="111.0" r="2.8" fill="#5b6b4f" style="--dx:7px;--dy:-31px;--o:0.51;animation-duration:4.8s;animation-delay:-3.0s"/><circle class="kos-dust" cx="43.5" cy="13.9" r="3.7" fill="#5b6b4f" style="--dx:-6px;--dy:-30px;--o:0.66;animation-duration:4.7s;animation-delay:-0.1s"/><circle class="kos-dust" cx="23.0" cy="136.5" r="3.7" fill="#5b6b4f" style="--dx:-8px;--dy:-26px;--o:0.67;animation-duration:4.3s;animation-delay:-3.8s"/><circle class="kos-dust" cx="143.9" cy="39.5" r="4.8" fill="#5b6b4f" style="--dx:0px;--dy:-13px;--o:0.85;animation-duration:3.1s;animation-delay:-0.8s"/><circle class="kos-dust" cx="127.4" cy="138.9" r="2.6" fill="#5b6b4f" style="--dx:11px;--dy:-20px;--o:0.49;animation-duration:3.8s;animation-delay:-3.9s"/><circle class="kos-dust" cx="11.1" cy="16.8" r="2.8" fill="#5b6b4f" style="--dx:-8px;--dy:-16px;--o:0.52;animation-duration:3.4s;animation-delay:-0.1s"/><circle class="kos-dust" cx="18.5" cy="123.0" r="3.8" fill="#5b6b4f" style="--dx:-7px;--dy:-31px;--o:0.68;animation-duration:4.8s;animation-delay:-3.4s"/>
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#8fa585" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#4d5e47" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#4d5e47"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#8fa585"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#8fa585"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#8fa585"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#7d8f74"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#8fa585"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#8fa585" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#4d5e47" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#4d5e47" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#4d5e47" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#4d5e47" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#4d5e47"/><circle cx="80" cy="50" r="2.1" fill="#4d5e47"/><circle cx="90" cy="54" r="2.1" fill="#4d5e47"/><circle cx="64" cy="64" r="2.1" fill="#4d5e47"/><circle cx="96" cy="64" r="2.1" fill="#4d5e47"/><circle cx="75" cy="62" r="2.1" fill="#4d5e47"/><circle cx="85" cy="62" r="2.1" fill="#4d5e47"/><circle cx="80" cy="70" r="2.1" fill="#4d5e47"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#c9d6c0"/><ellipse cx="62" cy="86" rx="11" ry="10" fill="#3f4a38"/><ellipse cx="98" cy="88" rx="11" ry="8" fill="#3f4a38"/><circle cx="62" cy="86" r="7.5" fill="#f2f6e6"/><ellipse cx="98" cy="89" rx="7.5" ry="5" fill="#f2f6e6"/><circle cx="64" cy="87" r="1.6" fill="#8a9a7a"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M64 112 L70 118 L76 112 L82 119 L88 112 L95 117" stroke="#2b1d14" stroke-width="2.8" fill="none" stroke-linejoin="round"/><g class="kos-drip kos-fill"><path d="M88 116 q3 8 0 12 q-3 -4 0 -12z" fill="#9be36b"/></g><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><path d="M66 56 L94 62 M70 52 l-2 8 M78 54 l-2 8 M86 56 l-2 8" stroke="#2b1d14" stroke-width="2" stroke-linecap="round"/><path d="M104 26 l6 8 l-8 2z" fill="#3b3640"/><g transform="translate(34 46)"><g class="kos-fly kos-fill" style="animation-delay:-0s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g><g transform="translate(128 60)"><g class="kos-fly kos-fill" style="animation-delay:-0.7s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g><g transform="translate(122 120)"><g class="kos-fly kos-fill" style="animation-delay:-1.4s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g></g>
+        </g>
+      </g>
+    </svg>
+          <h2><span class="dot" style="background:#7e0023"></span>Hazardous</h2>
+          <p class="range">AQI 301–500</p>
+          <p>A zombie in dark smog with flies around: health emergency.</p>
+          <p class="advice">Advice: Health emergency: everyone should avoid outdoor exposure.</p>
+          <p class="file"><a href="kos-hazardous.svg">kos-hazardous.svg</a></p>
+        </article></div>
+<h2 style="justify-content:flex-start">Small icons (forecast cards)</h2>
+<div class="icons"><svg class="kos kos-good" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, good air: enjoying the outdoors">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-good .kos-body { animation: kos-hop 1.3s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-good"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-good" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-good" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-good)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-good)">
+        <rect width="160" height="170" rx="26" fill="#bfe8ff"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#f4b23e" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#7a4a12" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#7a4a12"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#f4b23e"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#f4b23e"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#f4b23e"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#f4b23e"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#f4b23e" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#7a4a12" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#7a4a12" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#7a4a12" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#7a4a12" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#7a4a12" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#7a4a12" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#7a4a12" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#7a4a12" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#7a4a12" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#7a4a12" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#7a4a12"/><circle cx="80" cy="50" r="2.1" fill="#7a4a12"/><circle cx="90" cy="54" r="2.1" fill="#7a4a12"/><circle cx="64" cy="64" r="2.1" fill="#7a4a12"/><circle cx="96" cy="64" r="2.1" fill="#7a4a12"/><circle cx="75" cy="62" r="2.1" fill="#7a4a12"/><circle cx="85" cy="62" r="2.1" fill="#7a4a12"/><circle cx="80" cy="70" r="2.1" fill="#7a4a12"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fff4dc"/><path d="M54 86 q8 -9 16 0 M90 86 q8 -9 16 0" stroke="#2b1d14" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M66 110 Q80 128 94 110 Z" fill="#7a2a1e" stroke="#2b1d14" stroke-width="2.5" stroke-linejoin="round"/><path d="M73 118 Q80 126 87 118 Q80 121 73 118z" fill="#ff8a8a"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-sparkle kos-fill"><path d="M26 40 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3z" fill="#fff"/></g><g class="kos-sparkle kos-fill kos-late"><path d="M138 70 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2z" fill="#fff"/></g><circle cx="50" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/><circle cx="110" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/></g>
+        </g>
+      </g>
+    </svg><svg class="kos kos-moderate" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, moderate air: calm outside">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-moderate .kos-body { animation: kos-bob 4s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-moderate"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-moderate" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-moderate" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-moderate)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-moderate)">
+        <rect width="160" height="170" rx="26" fill="#e4ecd2"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#e9c06e" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#86602a" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#86602a"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#e9c06e"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#e9c06e"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#e9c06e"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#e9c06e"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#e9c06e" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#86602a" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#86602a" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#86602a" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#86602a" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#86602a" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#86602a" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#86602a" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#86602a" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#86602a" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#86602a" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#86602a"/><circle cx="80" cy="50" r="2.1" fill="#86602a"/><circle cx="90" cy="54" r="2.1" fill="#86602a"/><circle cx="64" cy="64" r="2.1" fill="#86602a"/><circle cx="96" cy="64" r="2.1" fill="#86602a"/><circle cx="75" cy="62" r="2.1" fill="#86602a"/><circle cx="85" cy="62" r="2.1" fill="#86602a"/><circle cx="80" cy="70" r="2.1" fill="#86602a"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fff6e2"/><g class="kos-eyes kos-fill"><ellipse cx="62" cy="86" rx="9" ry="8" fill="#b6c84a"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#b6c84a"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/></g><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M70 112 Q75 117 80 112 Q85 117 90 112" stroke="#2b1d14" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><circle cx="50" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/><circle cx="110" cy="102" r="6" fill="#ff9a8a" opacity="0.6"/></g>
+        </g>
+      </g>
+    </svg><svg class="kos kos-usg" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, unhealthy for sensitive groups: worried, runny nose">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-usg .kos-body { animation: kos-fidget 1.4s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-usg"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-usg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-usg" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-usg)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-usg)">
+        <rect width="160" height="170" rx="26" fill="#f3dfc6"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#d8a370" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#8b5e36" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#8b5e36"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#d8a370"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#d8a370"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#d8a370"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#d8a370"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#d8a370" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#8b5e36" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#8b5e36" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#8b5e36" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#8b5e36" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#8b5e36" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#8b5e36" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#8b5e36" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#8b5e36" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#8b5e36" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#8b5e36" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#8b5e36"/><circle cx="80" cy="50" r="2.1" fill="#8b5e36"/><circle cx="90" cy="54" r="2.1" fill="#8b5e36"/><circle cx="64" cy="64" r="2.1" fill="#8b5e36"/><circle cx="96" cy="64" r="2.1" fill="#8b5e36"/><circle cx="75" cy="62" r="2.1" fill="#8b5e36"/><circle cx="85" cy="62" r="2.1" fill="#8b5e36"/><circle cx="80" cy="70" r="2.1" fill="#8b5e36"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#fbecd8"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#c9b04a"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#c9b04a"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><g class="kos-drip kos-fill"><path d="M84 106 q3 6 0 9 q-3 -3 0 -9z" fill="#9fd8f5"/></g><path d="M70 116 Q75 112 80 115 Q85 118 90 114" stroke="#2b1d14" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M58 106 l-22 -4 M58 110 l-22 3 M102 106 l22 -4 M102 110 l22 3" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-drop kos-fill"><path d="M118 62 q6 9 0 13 q-6 -4 0 -13z" fill="#7fd3f0"/></g></g>
+        </g>
+      </g>
+    </svg><svg class="kos kos-unhealthy" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, unhealthy air: sick, wearing a mask">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-unhealthy .kos-body { animation: kos-cough 2.6s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-unhealthy"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-unhealthy" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-unhealthy" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-unhealthy)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-unhealthy)">
+        <rect width="160" height="170" rx="26" fill="#e6d7d3"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#bfa58c" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#6f5a46" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#6f5a46"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#bfa58c"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#bfa58c"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#bfa58c"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#bfa58c"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#bfa58c" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#6f5a46" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#6f5a46" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#6f5a46" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#6f5a46" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#6f5a46" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#6f5a46" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#6f5a46" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#6f5a46" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#6f5a46" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#6f5a46" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#6f5a46"/><circle cx="80" cy="50" r="2.1" fill="#6f5a46"/><circle cx="90" cy="54" r="2.1" fill="#6f5a46"/><circle cx="64" cy="64" r="2.1" fill="#6f5a46"/><circle cx="96" cy="64" r="2.1" fill="#6f5a46"/><circle cx="75" cy="62" r="2.1" fill="#6f5a46"/><circle cx="85" cy="62" r="2.1" fill="#6f5a46"/><circle cx="80" cy="70" r="2.1" fill="#6f5a46"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#f2e7da"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#b5a24c"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#b5a24c"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 82.5 Q62 76.25 72 82.5 V78 H52z M88 82.5 Q98 76.25 108 82.5 V78 H88z" fill="#bfa58c"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><g class="kos-drop kos-fill"><path d="M118 62 q6 9 0 13 q-6 -4 0 -13z" fill="#7fd3f0"/></g><circle cx="46" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><circle cx="114" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><path d="M44 62 Q40 92 54 104 M116 62 Q120 92 106 104" stroke="#e9eef0" stroke-width="2.4" fill="none"/><path d="M52 100 Q80 90 108 100 L102 122 Q80 132 58 122 Z" fill="#fff" stroke="#cfd8dc" stroke-width="1.6"/><path d="M80 94 V128 M60 108 Q80 104 100 108" stroke="#d6dee2" stroke-width="1.6" fill="none"/><g fill="#dfe4e6"><circle class="kos-puff kos-fill" cx="44" cy="118" r="6"/><circle class="kos-puff kos-fill" style="animation-delay:-0.4s" cx="36" cy="110" r="4.5"/></g></g>
+        </g>
+      </g>
+    </svg><svg class="kos kos-very_unhealthy" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, very unhealthy air: staying at home with a mask">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-very_unhealthy .kos-body { animation: kos-shiver 0.25s linear infinite; }</style>
+      <defs><clipPath id="kos-frame-very_unhealthy"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-very_unhealthy" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-very_unhealthy" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-very_unhealthy)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-very_unhealthy)">
+        <rect width="160" height="170" rx="26" fill="#d9cfe0"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#b3a3b8" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#6c5a73" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#6c5a73"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#b3a3b8"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#b3a3b8"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#b3a3b8"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#e8a0a0"/><path d="M119 50 Q117 38 108 40 Q112 46 115 53z" fill="#e8a0a0"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#b3a3b8"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#b3a3b8" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#6c5a73" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#6c5a73" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#6c5a73" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#6c5a73" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#6c5a73" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#6c5a73" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#6c5a73" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#6c5a73" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#6c5a73" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#6c5a73" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#6c5a73"/><circle cx="80" cy="50" r="2.1" fill="#6c5a73"/><circle cx="90" cy="54" r="2.1" fill="#6c5a73"/><circle cx="64" cy="64" r="2.1" fill="#6c5a73"/><circle cx="96" cy="64" r="2.1" fill="#6c5a73"/><circle cx="75" cy="62" r="2.1" fill="#6c5a73"/><circle cx="85" cy="62" r="2.1" fill="#6c5a73"/><circle cx="80" cy="70" r="2.1" fill="#6c5a73"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#efe7f0"/><ellipse cx="62" cy="86" rx="9" ry="8" fill="#a99bb0"/><ellipse cx="98" cy="86" rx="9" ry="8" fill="#a99bb0"/><ellipse cx="62" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><ellipse cx="98" cy="86" rx="2.4" ry="6.5" fill="#2b1d14"/><circle cx="65" cy="83" r="1.8" fill="#fff"/><circle cx="101" cy="83" r="1.8" fill="#fff"/><path d="M52 81.5 Q62 75.75 72 81.5 V78 H52z M88 81.5 Q98 75.75 108 81.5 V78 H88z" fill="#b3a3b8"/><path d="M52 74 l14 -5 M108 74 l-14 -5" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><circle cx="46" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><circle cx="114" cy="98" r="7" fill="#a6c76a" opacity="0.55"/><path d="M44 62 Q40 92 54 104 M116 62 Q120 92 106 104" stroke="#e9eef0" stroke-width="2.4" fill="none"/><path d="M52 100 Q80 90 108 100 L102 122 Q80 132 58 122 Z" fill="#fff" stroke="#cfd8dc" stroke-width="1.6"/><path d="M80 94 V128 M60 108 Q80 104 100 108" stroke="#d6dee2" stroke-width="1.6" fill="none"/><path d="M20 150 Q40 128 80 134 Q120 128 140 150 V170 H20z" fill="#6fa8dc"/><path d="M30 152 h100 M40 162 h80" stroke="#9ec6ea" stroke-width="3"/><g class="kos-thermo kos-fill"><rect x="100" y="112" width="26" height="5" rx="2.5" fill="#fff" stroke="#9aa5ab" stroke-width="1" transform="rotate(-20 100 114)"/><circle cx="125" cy="105" r="3.5" fill="#e53935"/></g></g>
+        </g>
+      </g>
+    </svg><svg class="kos kos-hazardous" width="48"
+      height="51"
+      viewBox="0 0 160 170" role="img" aria-label="Kos the leopard, hazardous air: zombie">
+      <style>
+.kos .kos-body { transform-box: view-box; transform-origin: 80px 170px; }
+.kos .kos-fill { transform-box: fill-box; transform-origin: center; }
+.kos .kos-eyes { animation: kos-blink 4.5s infinite; }
+.kos .kos-sun { animation: kos-spin 12s linear infinite; }
+.kos .kos-sparkle { animation: kos-twinkle 1.6s ease-in-out infinite; }
+.kos .kos-late { animation-delay: -0.8s; }
+.kos .kos-drop { animation: kos-drop 2s ease-in infinite; }
+.kos .kos-drip { animation: kos-drip 2.4s ease-in infinite; }
+.kos .kos-puff { animation: kos-puff 2.6s ease-out infinite; }
+.kos .kos-thermo { animation: kos-wag 1.2s ease-in-out infinite; }
+.kos .kos-fly { animation: kos-orbit 2.2s linear infinite; }
+.kos .kos-dust { animation: kos-drift linear infinite; }
+.kos .kos-smog { animation: kos-smog 6s ease-in-out infinite; }
+@keyframes kos-hop { 0%, 100% { transform: translateY(0) scale(1, 1); }
+  15% { transform: translateY(0) scale(1.05, 0.94); }
+  45% { transform: translateY(-14px) scale(0.97, 1.04); }
+  75% { transform: translateY(0) scale(1.04, 0.96); } }
+@keyframes kos-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes kos-fidget { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); }
+  50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+@keyframes kos-cough { 0%, 55%, 100% { transform: translateY(0) scale(1); }
+  60%, 72% { transform: translateY(4px) scale(1.04, 0.94); } 66%, 78% { transform: none; } }
+@keyframes kos-shiver { 0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1.2px); }
+  75% { transform: translateX(1.2px); } }
+@keyframes kos-lurch { 0%, 100% { transform: rotate(-6deg) translateX(-3px); }
+  50% { transform: rotate(7deg) translateX(3px); } }
+@keyframes kos-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes kos-spin { to { transform: rotate(360deg); } }
+@keyframes kos-twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1); } }
+@keyframes kos-drop { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; } }
+@keyframes kos-drip { 0%, 30% { transform: translateY(0) scaleY(0.4); opacity: 0.9; }
+  80% { transform: translateY(6px) scaleY(1.2); opacity: 0.9; }
+  100% { transform: translateY(14px); opacity: 0; } }
+@keyframes kos-puff { 0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  30% { opacity: 0.85; } 100% { transform: translate(-18px, -6px) scale(1.6); opacity: 0; } }
+@keyframes kos-wag { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+@keyframes kos-orbit { from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(14px) rotate(-360deg); } }
+@keyframes kos-drift { 0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: var(--o); } 80% { opacity: var(--o); }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes kos-smog { 0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .kos *, .kos { animation: none !important; } }
+.kos-hazardous .kos-body { animation: kos-lurch 3.2s ease-in-out infinite; }</style>
+      <defs><clipPath id="kos-frame-hazardous"><rect width="160" height="170" rx="26"/>
+      </clipPath>
+      <linearGradient id="kos-fade-hazardous" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0.82" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="kos-mask-hazardous" maskUnits="userSpaceOnUse" x="0" y="0" width="160"
+            height="170"><rect width="160" height="170" fill="url(#kos-fade-hazardous)"/></mask>
+      </defs>
+      <g clip-path="url(#kos-frame-hazardous)">
+        <rect width="160" height="170" rx="26" fill="#3b3640"/>
+        
+        <g >
+          <g class="kos-body"><path d="M126 168 Q150 150 146 126 Q143 112 152 104" stroke="#8fa585" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M146 124 l6 -3 M144 138 l6 -1" stroke="#4d5e47" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="104" r="5" fill="#4d5e47"/><ellipse cx="80" cy="168" rx="48" ry="30" fill="#8fa585"/><path d="M36 52 Q38 30 56 36 Q50 46 44 58z" fill="#8fa585"/><path d="M124 52 Q122 30 104 36 Q110 46 116 58z" fill="#8fa585"/><path d="M41 50 Q43 38 52 40 Q48 46 45 53z" fill="#7d8f74"/><ellipse cx="80" cy="90" rx="54" ry="45" fill="#8fa585"/><path d="M30 98 Q34 118 52 124 M130 98 Q126 118 108 124" stroke="#8fa585" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="48" cy="70" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="43.0" cy="68.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 43.0 68.0)"/><ellipse cx="50.0" cy="65.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 50.0 65.0)"/><ellipse cx="53.0" cy="73.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 53.0 73.0)"/><ellipse cx="46.0" cy="75.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 46.0 75.0)"/><circle cx="112" cy="70" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="107.0" cy="68.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 107.0 68.0)"/><ellipse cx="114.0" cy="65.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 114.0 65.0)"/><ellipse cx="117.0" cy="73.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 117.0 73.0)"/><ellipse cx="110.0" cy="75.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 110.0 75.0)"/><circle cx="40" cy="96" r="3.6" fill="#4d5e47" opacity="0.35"/><ellipse cx="35.5" cy="94.2" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-30 35.5 94.2)"/><ellipse cx="41.8" cy="91.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(20 41.8 91.5)"/><ellipse cx="44.5" cy="98.7" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(60 44.5 98.7)"/><ellipse cx="38.2" cy="100.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-60 38.2 100.5)"/><circle cx="120" cy="96" r="3.6" fill="#4d5e47" opacity="0.35"/><ellipse cx="115.5" cy="94.2" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-30 115.5 94.2)"/><ellipse cx="121.8" cy="91.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(20 121.8 91.5)"/><ellipse cx="124.5" cy="98.7" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(60 124.5 98.7)"/><ellipse cx="118.2" cy="100.5" rx="2.9" ry="1.7" fill="#4d5e47" transform="rotate(-60 118.2 100.5)"/><circle cx="60" cy="128" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="56.0" cy="126.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 56.0 126.4)"/><ellipse cx="61.6" cy="124.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 61.6 124.0)"/><ellipse cx="64.0" cy="130.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 64.0 130.4)"/><ellipse cx="58.4" cy="132.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 58.4 132.0)"/><circle cx="100" cy="128" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="96.0" cy="126.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 96.0 126.4)"/><ellipse cx="101.6" cy="124.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 101.6 124.0)"/><ellipse cx="104.0" cy="130.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 104.0 130.4)"/><ellipse cx="98.4" cy="132.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 98.4 132.0)"/><circle cx="36" cy="156" r="4.4" fill="#4d5e47" opacity="0.35"/><ellipse cx="30.5" cy="153.8" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-30 30.5 153.8)"/><ellipse cx="38.2" cy="150.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(20 38.2 150.5)"/><ellipse cx="41.5" cy="159.3" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(60 41.5 159.3)"/><ellipse cx="33.8" cy="161.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-60 33.8 161.5)"/><circle cx="124" cy="156" r="4.4" fill="#4d5e47" opacity="0.35"/><ellipse cx="118.5" cy="153.8" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-30 118.5 153.8)"/><ellipse cx="126.2" cy="150.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(20 126.2 150.5)"/><ellipse cx="129.5" cy="159.3" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(60 129.5 159.3)"/><ellipse cx="121.8" cy="161.5" rx="3.5" ry="2.1" fill="#4d5e47" transform="rotate(-60 121.8 161.5)"/><circle cx="80" cy="160" r="4.0" fill="#4d5e47" opacity="0.35"/><ellipse cx="75.0" cy="158.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-30 75.0 158.0)"/><ellipse cx="82.0" cy="155.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(20 82.0 155.0)"/><ellipse cx="85.0" cy="163.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(60 85.0 163.0)"/><ellipse cx="78.0" cy="165.0" rx="3.2" ry="1.9" fill="#4d5e47" transform="rotate(-60 78.0 165.0)"/><circle cx="58" cy="148" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="54.0" cy="146.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 54.0 146.4)"/><ellipse cx="59.6" cy="144.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 59.6 144.0)"/><ellipse cx="62.0" cy="150.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 62.0 150.4)"/><ellipse cx="56.4" cy="152.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 56.4 152.0)"/><circle cx="102" cy="148" r="3.2" fill="#4d5e47" opacity="0.35"/><ellipse cx="98.0" cy="146.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-30 98.0 146.4)"/><ellipse cx="103.6" cy="144.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(20 103.6 144.0)"/><ellipse cx="106.0" cy="150.4" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(60 106.0 150.4)"/><ellipse cx="100.4" cy="152.0" rx="2.6" ry="1.5" fill="#4d5e47" transform="rotate(-60 100.4 152.0)"/><circle cx="70" cy="54" r="2.1" fill="#4d5e47"/><circle cx="80" cy="50" r="2.1" fill="#4d5e47"/><circle cx="90" cy="54" r="2.1" fill="#4d5e47"/><circle cx="64" cy="64" r="2.1" fill="#4d5e47"/><circle cx="96" cy="64" r="2.1" fill="#4d5e47"/><circle cx="75" cy="62" r="2.1" fill="#4d5e47"/><circle cx="85" cy="62" r="2.1" fill="#4d5e47"/><circle cx="80" cy="70" r="2.1" fill="#4d5e47"/><ellipse cx="80" cy="110" rx="26" ry="18" fill="#c9d6c0"/><ellipse cx="62" cy="86" rx="11" ry="10" fill="#3f4a38"/><ellipse cx="98" cy="88" rx="11" ry="8" fill="#3f4a38"/><circle cx="62" cy="86" r="7.5" fill="#f2f6e6"/><ellipse cx="98" cy="89" rx="7.5" ry="5" fill="#f2f6e6"/><circle cx="64" cy="87" r="1.6" fill="#8a9a7a"/><path d="M73 100 Q80 96 87 100 Q84 106 80 107 Q76 106 73 100z" fill="#2b1d14"/><path d="M80 107 v4" stroke="#2b1d14" stroke-width="2.4"/><path d="M64 112 L70 118 L76 112 L82 119 L88 112 L95 117" stroke="#2b1d14" stroke-width="2.8" fill="none" stroke-linejoin="round"/><g class="kos-drip kos-fill"><path d="M88 116 q3 8 0 12 q-3 -4 0 -12z" fill="#9be36b"/></g><path d="M58 106 l-22 2 M58 110 l-22 9 M102 106 l22 2 M102 110 l22 9" stroke="#2b1d14" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/><path d="M66 56 L94 62 M70 52 l-2 8 M78 54 l-2 8 M86 56 l-2 8" stroke="#2b1d14" stroke-width="2" stroke-linecap="round"/><path d="M104 26 l6 8 l-8 2z" fill="#3b3640"/><g transform="translate(34 46)"><g class="kos-fly kos-fill" style="animation-delay:-0s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g><g transform="translate(128 60)"><g class="kos-fly kos-fill" style="animation-delay:-0.7s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g><g transform="translate(122 120)"><g class="kos-fly kos-fill" style="animation-delay:-1.4s"><circle r="2.2" fill="#111"/><ellipse cx="-2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/><ellipse cx="2" cy="-2.5" rx="2" ry="1.2" fill="#ccd" opacity="0.8"/></g></g></g>
+        </g>
+      </g>
+    </svg></div>
+</body></html>
